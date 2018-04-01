@@ -1,0 +1,7 @@
+module.exports = `language: node_js
+node_js:
+ - "8"
+script:
+ - yarn test
+cache: yarn
+`;

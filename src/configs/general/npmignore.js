@@ -1,0 +1,5 @@
+module.exports = `node_modules/
+src/
+yarn.lock
+webpack.config.js
+`;
