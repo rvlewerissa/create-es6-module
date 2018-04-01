@@ -33,7 +33,6 @@ program.version('0.0.1').description('ES6 module boilerplate');
 program.command('init').action(() => {
   prompt(questions).then((results) => {
     answers = results;
-
     setupDirectory();
     setupGeneralFiles();
     setupModules();
@@ -42,7 +41,7 @@ program.command('init').action(() => {
 });
 
 function setupDirectory() {
-  const MODULE_DIR = path.join(process.cwd(), `/${answers.name}`);
+  const MODULE_DIR = path.join(process.cwd(), answers.name);
   fs.mkdirSync(MODULE_DIR);
   process.chdir(MODULE_DIR);
   fs.mkdir('src/', noop);
