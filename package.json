@@ -1,6 +1,6 @@
 {
   "name": "create-es6-module",
-  "version": "0.0.3",
+  "version": "0.0.31",
   "description": "Minimalist setup to create ES6 NPM Module",
   "main": "./src/index.js",
   "bin": {
