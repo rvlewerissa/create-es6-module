@@ -1,4 +1,4 @@
-module.exports = function(name, description, author, license, repoAddress) {
+module.exports = function({name, description, author, license, repoAddress}) {
   return `{
   "name": "${name}",
   "version": "0.0.1",
@@ -39,7 +39,7 @@ module.exports = function(name, description, author, license, repoAddress) {
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
     "flow-bin": "^0.68.0",
-    "webpack": "3.8.1",
+    "webpack": "3.8.1"
   },
   "dependencies": {},
   "babel": {
@@ -55,7 +55,7 @@ module.exports = function(name, description, author, license, repoAddress) {
     "plugins": [
       "transform-class-properties",
       "transform-object-rest-spread",
-      "@babel/plugin-transform-flow-strip-types",
+      "@babel/plugin-transform-flow-strip-types"
     ]
   },
   "prettier": {
