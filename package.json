@@ -1,6 +1,6 @@
 {
   "name": "create-es6-module",
-  "version": "0.0.31",
+  "version": "0.0.4",
   "description": "Minimalist setup to create ES6 NPM Module",
   "main": "./src/index.js",
   "bin": {
@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/rvlewerissa/create-es6-module.git"
   },
-  "keywords": ["boilerplate", "npm", "es6", "module"],
+  "keywords": [
+    "boilerplate",
+    "npm",
+    "es6",
+    "module"
+  ],
   "author": "Ronaldo Vitto Lewerissa",
   "license": "ISC",
   "bugs": {
@@ -25,6 +30,10 @@
     "inquirer": "^5.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2"
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1"
+  },
+  "engines": {
+    "node": ">=4.9.1"
   }
 }

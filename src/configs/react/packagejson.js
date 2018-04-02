@@ -18,19 +18,18 @@ module.exports = function({name, description, author, license, repoAddress}) {
   "author": "${author}",
   "license": "${license}",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/runtime": "^7.0.0-beta.42",
+    "@babel/preset-es2015": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
     "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.42",
-    "babel-cli": "^6.26.0",
-    "babel-core": "6.26.0",
+    "@babel/plugin-syntax-class-properties": "^7.0.0-beta.42",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0-beta.42",
+    "babel-loader": "^8.0.0-beta",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
-    "babel-loader": "7.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^3.1.1",
-    "babel-runtime": "6.26.0",
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
@@ -39,22 +38,23 @@ module.exports = function({name, description, author, license, repoAddress}) {
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
     "flow-bin": "^0.68.0",
-    "webpack": "3.8.1"
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
   },
   "dependencies": {},
   "babel": {
     "presets": [
       [
-        "es2015",
+        "@babel/preset-es2015",
         {
           "loose": true
         }
       ],
-      "react"
+      "@babel/preset-react"
     ],
     "plugins": [
-      "transform-class-properties",
-      "transform-object-rest-spread",
+      "@babel/plugin-syntax-class-properties",
+      "@babel/plugin-syntax-object-rest-spread",
       "@babel/plugin-transform-flow-strip-types"
     ]
   },
